@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MovieAPI - Actor Index</title>
+</head>
+<body>
+  <div><%= @movie["title"] %></div>
+  <ul>
+    <% @actors.each do |actor| %>
+      <li><a href='/actors/<%= actor["id"] %>'><%= actor["name"] %></a></li>
+    <% end %>
+  </ul>
+</body>
+</html>
